@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3770A0E-69CD-4B46-B086-A6AEFA7F283E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>immobi.My.MyApplication</StartupObject>
+    <RootNamespace>immobi</RootNamespace>
+    <AssemblyName>immobi</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>immobi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>immobi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Controller.vb" />
+    <Compile Include="Utils.vb" />
+    <Compile Include="View\Auxiliar\FormFilho.Designer.vb">
+      <DependentUpon>FormFilho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Auxiliar\FormFilho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\AttCenCustos.Designer.vb">
+      <DependentUpon>AttCenCustos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\AttCenCustos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\AttContas.Designer.vb">
+      <DependentUpon>AttContas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\AttContas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\AttFavorecidos.Designer.vb">
+      <DependentUpon>AttFavorecidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\AttFavorecidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\CentroDeCustos.Designer.vb">
+      <DependentUpon>CentroDeCustos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\CentroDeCustos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Contas.Designer.vb">
+      <DependentUpon>Contas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Contas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Favorecidos.Designer.vb">
+      <DependentUpon>Favorecidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Favorecidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\PlanoContas.Designer.vb">
+      <DependentUpon>PlanoContas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\PlanoContas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\SubMenuCadastro.Designer.vb">
+      <DependentUpon>SubMenuCadastro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\SubMenuCadastro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Imoveis\AttContratos.Designer.vb">
+      <DependentUpon>AttContratos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Imoveis\AttContratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Imoveis\AttImoveis.Designer.vb">
+      <DependentUpon>AttImoveis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Imoveis\AttImoveis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Imoveis\Imoveis.Designer.vb">
+      <DependentUpon>Imoveis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Imoveis\Imoveis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Imoveis\SelecionarImovel.Designer.vb">
+      <DependentUpon>SelecionarImovel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Imoveis\SelecionarImovel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lançamentos\AddFavorecido.Designer.vb">
+      <DependentUpon>AddFavorecido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Lançamentos\AddFavorecido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lançamentos\AddPlanoContas.Designer.vb">
+      <DependentUpon>AddPlanoContas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Lançamentos\AddPlanoContas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lançamentos\AttLançamentos.Designer.vb">
+      <DependentUpon>AttLançamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Lançamentos\AttLançamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lançamentos\AttTransferencias.Designer.vb">
+      <DependentUpon>AttTransferencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Lançamentos\AttTransferencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lançamentos\Lançamentos.Designer.vb">
+      <DependentUpon>Lançamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Lançamentos\Lançamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lançamentos\SubMenuLançamentos.Designer.vb">
+      <DependentUpon>SubMenuLançamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Lançamentos\SubMenuLançamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Menu Principal\MenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Menu Principal\MenuPrincipal.Designer.vb">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="View\Menu Principal\TelaInicial.Designer.vb">
+      <DependentUpon>TelaInicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Menu Principal\TelaInicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Relatórios\Relatorios.Designer.vb">
+      <DependentUpon>Relatorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Relatórios\Relatorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Auxiliar\FormFilho.resx">
+      <DependentUpon>FormFilho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\AttCenCustos.resx">
+      <DependentUpon>AttCenCustos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\AttContas.resx">
+      <DependentUpon>AttContas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\AttFavorecidos.resx">
+      <DependentUpon>AttFavorecidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\CentroDeCustos.resx">
+      <DependentUpon>CentroDeCustos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Contas.resx">
+      <DependentUpon>Contas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Favorecidos.resx">
+      <DependentUpon>Favorecidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\PlanoContas.resx">
+      <DependentUpon>PlanoContas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\SubMenuCadastro.resx">
+      <DependentUpon>SubMenuCadastro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Imoveis\AttContratos.resx">
+      <DependentUpon>AttContratos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Imoveis\AttImoveis.resx">
+      <DependentUpon>AttImoveis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Imoveis\Imoveis.resx">
+      <DependentUpon>Imoveis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Imoveis\SelecionarImovel.resx">
+      <DependentUpon>SelecionarImovel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Lançamentos\AddFavorecido.resx">
+      <DependentUpon>AddFavorecido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Lançamentos\AddPlanoContas.resx">
+      <DependentUpon>AddPlanoContas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Lançamentos\AttLançamentos.resx">
+      <DependentUpon>AttLançamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Lançamentos\AttTransferencias.resx">
+      <DependentUpon>AttTransferencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Lançamentos\Lançamentos.resx">
+      <DependentUpon>Lançamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Lançamentos\SubMenuLançamentos.resx">
+      <DependentUpon>SubMenuLançamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Menu Principal\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Menu Principal\TelaInicial.resx">
+      <DependentUpon>TelaInicial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Relatórios\Relatorios.resx">
+      <DependentUpon>Relatorios.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home [#1391].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home [#1391]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile [#1336].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_round [#1180].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home [#1391]2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book [#1207].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileboard_checklist [#1595].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close [#1511].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close [#1511]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_mini [#1523].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
