@@ -1,0 +1,105 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+immobi
+</name>
+</assembly>
+<members>
+<member name="T:immobi.My.Resources.Resources">
+<summary>
+  Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.ResourceManager">
+<summary>
+  Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.Culture">
+<summary>
+  Substitui a propriedade CurrentUICulture do thread atual para todas as
+  pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.book___1207_">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.close___1511_">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.close___1511_1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.fileboard_checklist___1595_">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.home___1391_">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.home___1391_1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.home___1391_2">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.money_round___1180_">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.plus_mini___1523_">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:immobi.My.Resources.Resources.profile___1336_">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:immobi.Utils.LimparForm(System.Windows.Forms.Control)">
+ <summary>
+ Método que recebe um formulário e preenche com "" os controles : TextBox, MaskedTextBox, ComboBox e CheckBox
+ </summary>
+ <param name="controlP">Formulario a ser limpo</param>
+ <remarks></remarks>
+</member>
+<member name="M:immobi.Utils.InsertImoveis(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+ <summary>
+ Método que Insere um novo registro na tabela de Imóveis
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:immobi.Utils.atualizaSaldoAtualConta(System.Int32)">
+ <summary>
+ Método que atualiza o saldo atual de uma conta, 
+ calculando todos os seus lançamentos(Valores negativos subtraem, positivos somam)
+ </summary>
+ <param name="codigo">Código da conta</param>
+ <remarks></remarks>
+</member>
+<member name="M:immobi.Utils.updateSaldoConta(System.Int32,System.Double)">
+ <summary>
+ Método que realiza o update no banco 
+ </summary>
+ <param name="codigo">Código da conta</param>
+ <param name="novoValor">Valor a ser debitado ou subtraido da conta</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
